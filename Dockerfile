@@ -6,7 +6,7 @@ RUN set -ex; \
     apt-get update && \
     apt-get -y install software-properties-common && \
     add-apt-repository -u ppa:deluge-team/stable && \
-    apt-get update && apt-get -y install dumb-init iputils-ping dnsutils bash jq net-tools openvpn curl ufw deluged deluge-web p7zip-full unrar unzip && \
+    apt-get update && apt-get -y install dumb-init iputils-ping dnsutils bash jq net-tools openvpn curl ufw deluged deluge-console deluge-web p7zip-full unrar unzip && \
     echo "Cleanup"; \
     rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp/* && \
     echo "Adding user"; \
